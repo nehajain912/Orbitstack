@@ -1,12 +1,43 @@
-.pix-sliding-headline-2 .slide-in-container {
-    display: inline-flex !important;
-    width: max-content !important;
-    flex: 0 0 auto !important;
-    gap: 0 !important;
-    margin-right: 8px !important;
+/* Fix sliding headline word and letter spacing */
+.pix-sliding-headline-2,
+[data-anim-type="pix-sliding-text"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: baseline !important;
+    column-gap: 0.28em !important;
+    row-gap: 0.15em !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    line-height: 1.15 !important;
 }
 
-.pix-sliding-headline-2 .pix-sliding-letter {
+.pix-sliding-headline-2:not([class*="display-"]):not(h6) {
+    font-size: 40px !important;
+}
+
+/* Ensure centered sliding headings remain centered */
+.pix-sliding-text-element.text-center .pix-sliding-headline-2,
+.text-center > .pix-sliding-headline-2,
+.pix-sliding-headline-2.text-center {
+    justify-content: center !important;
+}
+
+.pix-sliding-headline-2 .slide-in-container,
+[data-anim-type="pix-sliding-text"] .slide-in-container,
+.slide-in-container {
+    display: inline-flex !important;
+    width: auto !important;
+    max-width: max-content !important;
+    flex: 0 0 auto !important;
+    gap: 0 !important;
+    padding: 0.08em 0 !important;
+    margin: -0.08em 0 !important;
+    vertical-align: baseline !important;
+}
+
+.pix-sliding-headline-2 .pix-sliding-letter,
+[data-anim-type="pix-sliding-text"] .pix-sliding-letter,
+.pix-sliding-item {
     display: inline-block !important;
     width: auto !important;
     min-width: 0 !important;
@@ -14,13 +45,6 @@
     margin: 0 !important;
     padding: 0 !important;
     letter-spacing: normal !important;
-}
-
-.pix-sliding-headline-2 {
-    font-size: 40px !important;
-    line-height: 1.1 !important;
-    letter-spacing: normal !important;
-    word-spacing:0;
 }
 
 /* Disable infinite loading overlay */
