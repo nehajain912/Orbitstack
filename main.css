@@ -1,0 +1,24 @@
+.pix-sliding-headline-2 .slide-in-container {
+    display: inline-flex !important;
+    width: max-content !important;
+    flex: 0 0 auto !important;
+    gap: 0 !important;
+    margin-right: 8px !important;
+}
+
+.pix-sliding-headline-2 .pix-sliding-letter {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    letter-spacing: normal !important;
+}
+
+.pix-sliding-headline-2 {
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+    letter-spacing: normal !important;
+    word-spacing:0;
+}
