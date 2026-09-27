@@ -22,3 +22,9 @@
     letter-spacing: normal !important;
     word-spacing:0;
 }
+
+/* Disable infinite loading overlay */
+.pix-page-loading-bg,
+.pix-loading-circ-path {
+    display: none !important;
+}

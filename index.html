@@ -85,23 +85,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
             html:has(body:not(.render)) {
                 background: var(--pix-pagetransition-bg)  !important;
             }
+            .pix-page-loading-bg,
+            .pix-loading-circ-path {
+                display: none !important;
+            }
             .pix-page-loading-bg:after {
-                content: " ";
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                display: block;
-                pointer-events: none;
-                transition: opacity .16s ease-in-out;
-                transform-style: flat;
-                z-index: 99999999999999999999;
-                opacity: 1;
-                background: var(--pix-pagetransition-bg) !important;
+                display: none !important;
+                opacity: 0 !important;
             }
             body.render .pix-page-loading-bg:after {
-                opacity: 0;
+                display: none !important;
+                opacity: 0 !important;
             }
             
 /*# sourceURL=pix-intro-handle-inline-css */
@@ -123,7 +117,7 @@ var breeze_prefetch = {"local_url":"https://conseil.pixfort.com/vision","ignore_
 <script id="jquery-core-js" src="https://conseil.pixfort.com/vision/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
 <link rel="https://api.w.org/" href="https://conseil.pixfort.com/vision/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://conseil.pixfort.com/vision/wp-json/wp/v2/pages/34" /><link rel='shortlink' href='https://conseil.pixfort.com/vision/' />
 <link rel="modulepreload" href="https://conseil.pixfort.com/vision/wp-content/plugins/pixfort-core/dist/front/header.dc39930feae5827670b0.js">
-<link rel="modulepreload" href="https://conseil.pixfort.com/vision/wp-content/plugins/pixfort-core/dist/front/common.d9377fcacd51b3a9e2d8.js">
+<link rel="modulepreload" href="https://conseil.pixfort.com/vision/wp-content/plugins/pixfort-core/dist/front/common.66e9208243dfbae8126b.js">
 <link rel="modulepreload" href="https://conseil.pixfort.com/vision/wp-content/plugins/pixfort-core/dist/front/animations.c957f8e8d0cbeed6491b.js">
 <link 
   rel="preload" 
@@ -161,9 +155,9 @@ var breeze_prefetch = {"local_url":"https://conseil.pixfort.com/vision","ignore_
 <link rel="apple-touch-icon" href="https://conseil.pixfort.com/vision/wp-content/uploads/sites/6/2025/08/cropped-red-orange-gradient-favicon-180x180.webp" />
 <meta name="msapplication-TileImage" content="https://conseil.pixfort.com/vision/wp-content/uploads/sites/6/2025/08/cropped-red-orange-gradient-favicon-270x270.webp" />
 </head>
-<body class="home wp-singular page-template-default page page-id-34 wp-theme-conseil  site-render-fade-page-transition elementor-default elementor-kit-5 elementor-page elementor-page-34" style="">
-			<div class="pix-page-loading-bg"></div>
-		            <div class="pix-loading-circ-path"></div>
+<body class="render pix-loaded home wp-singular page-template-default page page-id-34 wp-theme-conseil  site-render-fade-page-transition elementor-default elementor-kit-5 elementor-page elementor-page-34" style="">
+			<div class="pix-page-loading-bg" style="display: none !important;"></div>
+		            <div class="pix-loading-circ-path" style="display: none !important;"></div>
         	<div id="page" class="site">
 				<div data-area="topbar" class="pixfort-header-area pixfort-area-content is-smart-sticky pix-topbar position-relative2 pix-header-desktop pix-topbar-normal" data-width="default" data-scroll-width="">
 			<div class="container">
@@ -1643,7 +1637,7 @@ var PIX_JS_OPTIONS = {"dataAjaxBase":"https://conseil.pixfort.com/vision/wp-admi
 var PIX_POPUPS_OPTIONS = {"5798":{"customStyle":{"--pix-dialog-close-color":"rgba(173, 181, 189, 1)","--pix-dialog-close-color-dark":"rgba(173, 181, 189, 1)","--pix-dialog-border-radius":"0px","--pix-dialog-padding":"0px","--pix-launcher-bottom-value":"20px","--pix-dialog-backdrop-filter":"blur(5px)","--pix-dialog-background-color":"var(--pix-white)","--pix-dialog-backdrop-bg":"var(--pix-dark-opacity-1)"},"launcherStyle":{"--pix-launcher-background-color":"var(--pix-white)","--pix-launcher-color":"var(--pix-primary)","--pix-launcher-bottom-value":"20px","--pix-launcher-horizontal-value":"20px"},"launcherOptions":{"enabled":true}}};
 //# sourceURL=pix-main-pixfort-js-extra
 </script>
-<script data-wp-strategy="defer" defer id="pix-main-pixfort-js" src="https://conseil.pixfort.com/vision/wp-content/plugins/pixfort-core/dist/front/index.bundle-7a908c32c4a56d542b74.js?ver=4.3.1"></script>
+<script data-wp-strategy="defer" defer id="pix-main-pixfort-js" src="https://conseil.pixfort.com/vision/wp-content/plugins/pixfort-core/dist/front/index.bundle-77697ead8980c75f41de.js?ver=4.3.4"></script>
 <script id="elementor-webpack-runtime-js" src="https://conseil.pixfort.com/vision/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.4"></script>
 <script id="elementor-frontend-modules-js" src="https://conseil.pixfort.com/vision/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.4"></script>
 <script id="jquery-ui-core-js-before">
